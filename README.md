@@ -12,7 +12,7 @@ To compile this software you need
 - Library: ESPAsyncWebServer (add with library manager in IDE)
 - Library: AsyncElegantOTA (add with library manager in IDE)
 - Library: ESP32AnalogRead (add with library manager in IDE)
-- The contents of this repository, download as zip and extract to your documents/arduino folder
+- The contents of this repository, download as zip and extract to your documents/arduino folder.
 Compile and upload the sketch to your esp over usb, or when updating the software export the compiled binary so you can update the firmware OTA.
 
 # Manual
