@@ -46,6 +46,6 @@ r
 
 and the miner will reboot. If the miner will not mine you can check your configuration files by entering
 
-type <filename>
+type filename
 
-where <filename> is one of the configuration files (don't forget the preceeding '/').
+where filename is one of the configuration files (don't forget the preceeding '/').
