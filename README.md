@@ -20,6 +20,7 @@ Compile and upload the sketch to your esp over usb, or when updating the softwar
 ## Starting for the first time
 
 The miner will not be configured, so that is the first thing to do to get it up and running. Use a PC with a wireless connection or phone to connect to the miner, it identifies itself as 'ESP miner'. When connected open the miner's webpage at 192.168.4.1
+
 In the bottom field enter
 
 write /wifi.cfg:myssid mypassword
