@@ -6,7 +6,7 @@ To compile this software you need
 
 - Arduino IDE (version 1.8.19 or above)
 - Support for Espressif ESP's
-- Library: PT8211 (see my repositories, extract to your library folder), needed for measuring Vcore with a PT8211s
+- Library: PT8211 (see my repositories, extract to your library folder), needed for regulating Vcore with a PT8211s
 - Library: WebSerialLite_S9 (see my repositories, extract to your library folder)
 - Library: Freenove_WS2812_Lib_for_ESP32 (add with library manager in IDE), needed for the RGB led
 - Library: ESPAsyncWebServer (add with library manager in IDE)
@@ -40,12 +40,17 @@ The last configuration is for the asic chips. The easiest way to set these to a 
 
 s
 
-which will save the setting as used during bootup of the miner. You can tune these settings later. Now its time for (another) reboot. Enter
+which will save the (safe and slow) asic settings as used during bootup of the miner. If you remember previously used settings you can write those to the asic configuration with
+
+write /asic.cfg:300 1350
+
+Where the first number is the frequency in MHz and the second is the core voltage in millivolt. 
+You can tune these settings later using f+/f- & v+/v- commands. Now its time for (another) reboot. Enter
 
 r
 
-and the miner will reboot. If the miner will not mine you can check your configuration files by entering
+and the miner will reboot. If the miner will not start mining you can check your configuration files by entering
 
 type filename
 
-where filename is one of the configuration files (don't forget the preceeding '/').
+where filename is one of the configuration files (don't forget the preceeding '/'). The miner will also report a missing (or very wrong) configuration file at boot up but you will have to open its web page very early after power up/reboot or you will miss it.
