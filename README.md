@@ -54,4 +54,4 @@ and the miner will reboot. If the miner will not start mining you can check your
 
 type filename
 
-where filename is one of the configuration files (don't forget the preceeding '/'). The miner will also report a missing (or very wrong) configuration file at boot up but you will have to open its web page very early after power up/reboot or you will miss it.
+where filename is one of the configuration files (don't forget the preceeding '/'). The miner will also report a missing (or very wrong) configuration file at boot up but you will have to open its web page very soon after power up/reboot or you will miss it.
