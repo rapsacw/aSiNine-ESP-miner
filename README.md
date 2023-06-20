@@ -39,14 +39,14 @@ write /pool.cfg:solo.ckpool.org 3333 1KgwWwBh7qGtcWJ9ZRNTUbVCR1L2qYkzcy pwd MyMi
 where solo.ckpool.org is the pool address, 3333 is the port number, next is your login name, which is often your BTC address, followed by your password, then the worker name (if the pool does not support worker names enter X) and finally a y or n to indicate if the pool supports custom difficulty settings.
 The last configuration is for the asic chips. The easiest way to set these to a 'working' value is by entering
 
-s
+safe asic
 
-which will save the (safe and slow) asic settings as used during bootup of the miner. If you remember previously used settings you can write those to the asic configuration with
+which will save the (safe and slow) asic settings as used during bootup of the miner. If you remember previously used settings you can write those to the asic configuration instead with
 
 write /asic.cfg:300 1350
 
 Where the first number is the frequency in MHz and the second is the core voltage in millivolt. 
-You can tune these settings later using f+/f- & v+/v- commands. Now its time for (another) reboot. Enter
+You can tune these settings later using f+/f- & v+/v- commands. Now its time for (another) reboot so the miner will try to startup with the new configuration. Enter
 
 r
 
@@ -54,7 +54,7 @@ and the miner will reboot. If the miner will not start mining you can check your
 
 type filename
 
-where filename is one of the configuration files (don't forget the preceeding '/'). The miner will also report a missing (or very wrong) configuration file at boot up but you will have to open its web page very soon after power up/reboot or you will miss it.
+where filename is one of the configuration files (don't forget the preceeding '/'). The miner will also report a missing (or very wrong) configuration file when booting but you will have to open its web page very soon after power up/reboot or you will miss it.
 
 The miner will load the configuration files at each reboot so luckily you only have to do all of this once.
 
