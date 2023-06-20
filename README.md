@@ -1,4 +1,4 @@
-# aSiNine-ESP-miner (WIP)
+t# aSiNine-ESP-miner (WIP)
 Bitcoin miner for BM1387/BM1397 asics on an ESP microcontroller
 
 # (WIP'ing now) Documents first, starting with the built instructions
@@ -19,15 +19,15 @@ Compile and upload the sketch to your esp over usb, or when updating the softwar
 
 ## Starting for the first time
 
-The miner will not be configured, so that is the first thing to do to get it up and running. Use a PC with a wireless connection or phone to connect to the miner's access point, it identifies itself as 'aSiNineMiner', the password is 'bm1387bm1397'. When connected open the miner's webpage at 192.168.4.1
+The miner will not be configured, so that is the first thing to do to get it up and running. The miner's led will be red at this point to show it has no wifi connection and has setup an access point. Use a PC with a wireless connection or phone to connect to this access point, it identifies itself as 'aSiNineMiner', and the password is 'bm1387bm1397'. When connected open the miner's webpage at 192.168.4.1
 
 In the bottom field enter
 
 write /wifi.cfg:myssid mypassword
 
-(replace myssid and mypassword with your wifi credentials) and press enter or click on 'Send'. Note that the miner will automatically reboot after 1 minute. If you are comfortable typing on your current device you can skip rebooting, otherwise type
+(replace myssid and mypassword with your wifi credentials) and press enter or click on 'Send'. Note that the miner will automatically reboot after 1 minute. Wait for the miner to reboot or type
 r
-and enter to reboot the miner. When rebooted open the miner's webpage at its new address that can be found in your routers DHCP list. If you skipped rebooting or opened the webpage on its new address continu with configuring the device dependent data;
+and enter to reboot the miner. The led should no longer be red to signal it has a wifi connection. Open the miner's webpage at its new address that can be found in your routers DHCP list. Now we configure the device dependent data; type
 
 write /sys.cfg:1397 1 1 1.0
 
