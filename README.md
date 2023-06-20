@@ -19,13 +19,13 @@ Compile and upload the sketch to your esp over usb, or when updating the softwar
 
 ## Starting for the first time
 
-The miner will not be configured, so that is the first thing to do to get it up and running. Use a PC with a wireless connection or phone to connect to the miner, it identifies itself as 'ESP miner'. When connected open the miner's webpage at 192.168.4.1
+The miner will not be configured, so that is the first thing to do to get it up and running. Use a PC with a wireless connection or phone to connect to the miner's access point, it identifies itself as 'aSiNineMiner', the password is 'bm1387bm1397'. When connected open the miner's webpage at 192.168.4.1
 
 In the bottom field enter
 
 write /wifi.cfg:myssid mypassword
 
-(replace myssid and mypassword with your wifi credentials) and press enter or click on 'Send'. If you are comfortable typing on your current device you can skip rebooting, otherwise type
+(replace myssid and mypassword with your wifi credentials) and press enter or click on 'Send'. Note that the miner will automatically reboot after 1 minute. If you are comfortable typing on your current device you can skip rebooting, otherwise type
 r
 and enter to reboot the miner. When rebooted open the miner's webpage at its new address that can be found in your routers DHCP list. If you skipped rebooting or opened the webpage on its new address continu with configuring the device dependent data;
 
@@ -57,3 +57,5 @@ type filename
 where filename is one of the configuration files (don't forget the preceeding '/'). The miner will also report a missing (or very wrong) configuration file at boot up but you will have to open its web page very soon after power up/reboot or you will miss it.
 
 The miner will load the configuration files at each reboot so luckily you only have to do all of this once.
+
+Tip: write all configuration commands in a text file so you can copy & paste them instead of typing them when you want to reconfigure the miner. 
