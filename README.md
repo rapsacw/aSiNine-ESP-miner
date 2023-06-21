@@ -5,10 +5,10 @@ Bitcoin miner for BM1387/BM1397 asics on an ESP microcontroller
 To compile this software you need
 
 - Arduino IDE (version 1.8.19 or above)
-- Support for Espressif ESP's
+- Support for Espressif ESP's (https://randomnerdtutorials.com/installing-esp32-arduino-ide-2-0/)
 - Library: PT8211 (see my repositories, extract to your library folder), needed for regulating Vcore with a PT8211s
 - Library: WebSerialLite_S9 (see my repositories, extract to your library folder)
-- Library: Freenove_WS2812_Lib_for_ESP32 (add with library manager in IDE), needed for the RGB led
+- Library: Freenove_WS2812_Lib_for_ESP32 ([github, download as zip and extract to your library folder](https://github.com/Freenove/Freenove_WS2812_Lib_for_ESP32)), needed for the RGB led
 - Library: ESPAsyncWebServer (add with library manager in IDE)
 - Library: AsyncElegantOTA (add with library manager in IDE)
 - Library: ESP32AnalogRead (add with library manager in IDE)
