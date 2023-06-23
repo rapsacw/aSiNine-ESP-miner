@@ -45,7 +45,7 @@ The last configuration is for the asic chips. The easiest way to set these to a 
 
 <b>save asic</b>
 
-which will save the (safe and slow) asic settings as used during bootup of the miner. If you remember previously used settings you can write those to the asic configuration instead with
+<b>after a reboot</b> which will save the (safe and slow) asic settings as used during bootup of the miner. If you remember previously used settings you can write those to the asic configuration instead with
 
 <b>write /asic.cfg:300 1350</b>
 
